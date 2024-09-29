@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Buff Central - Marvel Cinematic Universe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="home-page">
+        <h1>Welcome to Movie Buff Central</h1>
+        <p>Your hub for all things Marvel Cinematic Universe!</p>
+        <div class="movie-posters">
+            <img src="https://static.wikia.nocookie.net/p__/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg/revision/latest?cb=20190919010656&path-prefix=protagonist"width=30%,heigt=25px alt="Iron Man">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Black_Panther_OS_Vol_1_2.png"width=30%,height=70px alt="Black Panther">
+            <img src="https://cdn.marvel.com/content/1x/avengersinfinitywar_lob_crd_02_1.jpg"width=30%,height=30px alt="Avengers"
+        </div>
+    </header>
+    <section class="character-bios">
+        <h2>Character Bios</h2>
+        <div class="character">
+            <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/11/iron-man-tony-stark-the-avengers-avengers-endgame.jpg"width=30%,heigt=25px alt="Iron Man">
+            <div class="character-info">
+                <h3>Iron Man (Tony Stark)</h3>
+                <p>The genius billionaire playboy philanthropist who becomes the armored superhero, Iron Man.</p>
+                <p><strong>Interesting Fact:</strong> Tony Stark's AI assistant, J.A.R.V.I.S., is named after his father's butler.</p>
+            </div>
+        </div>
+        <div class="character">
+            <img src="https://moviecomicswhoswho.wordpress.com/wp-content/uploads/2013/09/captainamericafilm.jpg"width=30%,heigt=25px alt="Captain America">
+            <div class="character-info">
+                <h3>Captain America (Steve Rogers)</h3>
+                <p>The super-soldier who fights for freedom with his indestructible shield.</p>
+                <p><strong>Interesting Fact:</strong> Captain America's shield is made from vibranium, the same material found in Wakanda.</p>
+            </div>
+        </div>
+        <!-- Add more characters as needed -->
+    </section>
+
+    <!-- Embedded Movie Trailers -->
+    <section class="trailers">
+        <h2>Watch the Trailers</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8?si=BlgCfshz7uPRLlAG"></iframe>
+        <!-- Add more trailers as needed -->
+    </section>
+
+    <!-- Quote of the Day -->
+    <section class="quote-of-the-day">
+        <h2>Quote of the Day</h2>
+        <p id="quoteDisplay">"I am Iron Man."</p>
+    </section>
+    <section id="trivia">
+        <h2>Trivia Quiz</h2>
+        
+        <form id="quizForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. what is the name of Tony Stark's assistant before J.A.R.V.I.S. becomes vision?</h3>
+                <input type="radio" name="question1" value="correct"><label>F.R.I.D.A.Y</label>
+                <input type="radio" name="question1" value="wrong"><label>H.O.M.E.R</label>
+                <input type="radio" name="question1" value="wrong"><label>A.L.F.R.E.D</label>
+                <input type="radio" name="question1" value="wrong"><label>D.U.M.M.Y</label>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2.Which MCU movie introduced the character Blck Panther?</h3>
+                <label><input type="radio" name="question2" value="wrong">Black Panther</label>
+                <label><input type="radio" name="question2" value="correct">Captain America:civil War</label>
+                <label><input type="radio" name="question2" value="wrong">Avengers:Age of Ultron</label>
+                <label><input type="radio" name="question2" value="wrong">Doctor Strange</label>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. Which movie does the line 'I am inevitable' come from?</h3>
+                <label><input type="radio" name="question3" value="wrong">Thor:Ragnarok</label>
+                <label><input type="radio" name="question3" value="wrong">Avengers:Age of ultron</label>
+                <label><input type="radio" name="question3" value="correct">Avengers:Endgame</label>
+                <label><input type="radio" name="question3" value="wrong">Avengers:Infinity War</label>
+            </div>
+    
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </form>
+    
+    </section>
+</body>
+</html>
+
+                
